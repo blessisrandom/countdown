@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(168, 85, 245, 0.5), rgba(145, 7, 209, 0.842));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.timebox{
+    display: flex;
+    gap: 90px;
+}
+
+.time{
+    text-align: center;
+    position: relative;
+}
+
+.time h2{
+    font-weight: 100;
+    font-size: 5rem;
+}
+
+.time:not(:last-child)::after {
+    content: ":";
+    position: absolute;
+    right: -60px;
+    top: 5px;
+    font-size: 4rem;
+}
